@@ -1,0 +1,49 @@
+{
+    "name": "@rbxts/prism",
+    "description": "Create custom data-driven user interfaces with @rbxts/vide",
+    "version": "1.0.0",
+    "author": "languint-rbx",
+    "license": "MIT",
+    "main": "out/init.lua",
+    "types": "out/index.d.ts",
+    "files": [
+        "out",
+        "!**/*.tsbuildinfo",
+        "!**/__tests__"
+    ],
+    "keywords": [
+        "roblox",
+        "roblox-ts",
+        "ui"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/languint/rbxts-prism.git"
+    },
+    "bugs": {
+        "url": "https://github.com/languint/rbxts-prism/issues"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "prepack": "pnpm build",
+        "build": "shx rm -rf out && rbxtsc --verbose",
+        "dev": "shx rm -rf out && rbxtsc -w"
+    },
+    "devDependencies": {
+        "@rbxts/compiler-types": "^3.0.0-types.0",
+        "@rbxts/jest": "^0.1.0",
+        "@rbxts/jest-globals": "^0.1.0",
+        "@rbxts/types": "^1.0.813",
+        "roblox-ts": "3.0.0",
+        "shx": "^0.3.4",
+        "typescript": "=5.5.3"
+    },
+    "dependencies": {
+        "@rbxts/object-utils": "^1.0.4",
+        "@rbxts/services": "^1.5.5",
+        "@rbxts/t": "^3.1.1",
+        "@rbxts/vide": "^0.5.3"
+    }
+}

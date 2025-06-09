@@ -1,0 +1,26 @@
+{
+	"component": {
+		"prefix": "component",
+		"body": [
+			"export interface ${1:example}Props {",
+			"\tnative?: Partial<WritableInstanceProperties<>>;",
+			"}",
+			"",
+			"export function ${1:example}(props: ${1:example}Props) {",
+			"\tconst { palette } = usePrism();",
+			"\treturn ()",
+			"}"
+		],
+		"description": ""
+	},
+	"native": {
+		"prefix": "native",
+		"body": ["native: Partial<WritableInstanceProperties<${1:T}>>"],
+		"description": ""
+	},
+	"usepx": {
+		"prefix": "usepx",
+		"body": ["const px = usePx();"],
+		"description": ""
+	}
+}
